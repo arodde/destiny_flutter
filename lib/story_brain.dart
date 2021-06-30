@@ -36,18 +36,31 @@ class StoryBrain {
         choice1: 'Restart',
         choice2: '')
   ];
+  int storyNumber = 0;
 
 //TODO: Step 8 - Create a method called getStory() that returns the first storyTitle from _storyData.
   String getStory() {
-    return _storyData.first.storyTitle;
+    return _storyData.elementAt(storyNumber).storyTitle;
   }
 
   String getChoice1() {
-    return _storyData.first.choice1;
+    return _storyData.elementAt(storyNumber).choice1;
   }
 
   String getChoice2() {
-    return _storyData.first.choice2;
+    return _storyData.elementAt(storyNumber).choice2;
+  }
+
+  void nextStory(int choiceNumber) {
+    if (choiceNumber == 1 && storyNumber == 0) {
+      storyNumber = 2;
+    } else if (storyNumber == 3 || storyNumber == 4 || storyNumber == 5) {
+      restart();
+    }
+  }
+
+  void restart() {
+    this.storyNumber = 0;
   }
 }
 
