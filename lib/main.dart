@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-
+import 'story.dart';
 //TODO: Step 15 - Run the app and see if you can see the screen update with the first story. Delete this TODO if it looks as you expected.
 
 void main() => runApp(Destini());
+// void main() {
+//   Story story = Story(storyTitle: "aa", choice1: "bb", choice2: "cc");
+//   story.pouet();
+// }
 
 class Destini extends StatelessWidget {
   Widget build(BuildContext context) {
