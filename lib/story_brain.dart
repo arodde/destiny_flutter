@@ -54,6 +54,16 @@ class StoryBrain {
   void nextStory(int choiceNumber) {
     if (choiceNumber == 1 && storyNumber == 0) {
       storyNumber = 2;
+    } else if (choiceNumber == 2 && storyNumber == 0) {
+      storyNumber = 1;
+    } else if (choiceNumber == 1 && storyNumber == 1) {
+      storyNumber = 2;
+    } else if (choiceNumber == 2 && storyNumber == 1) {
+      storyNumber = 3;
+    } else if (choiceNumber == 1 && storyNumber == 2) {
+      storyNumber = 5;
+    } else if (choiceNumber == 2 && storyNumber == 2) {
+      storyNumber = 4;
     } else if (storyNumber == 3 || storyNumber == 4 || storyNumber == 5) {
       restart();
     }
