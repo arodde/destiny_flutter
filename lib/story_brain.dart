@@ -74,7 +74,7 @@ class StoryBrain {
   }
 }
 
-//TODO: Step 23 - Use the storyNumber property inside getStory(), getChoice1() and getChoice2() so that it gets the updated story and choices rather than always just the first (0th) one.
+//TOD: Step 23 - Use the storyNumber property inside getStory(), getChoice1() and getChoice2() so that it gets the updated story and choices rather than always just the first (0th) one.
 
 //TOD: Step 11 - Create a method called getChoice1() that returns the text for the first choice1 from _storyData.
 
