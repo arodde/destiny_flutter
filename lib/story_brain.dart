@@ -5,7 +5,8 @@ import 'story.dart';
 class StoryBrain {
 //TOD: Step 7 - Uncomment the lines below to include storyData as a private property in StoryBrain. Hint: You might need to change something in story.dart to make this work.
 
-  List<Story> _storyData = [
+  List<Story> _storyData = [];
+  List<Story> _storyDataEnglish = [
     Story(
         storyTitle:
             'Your car has blown a tire on a winding road in the middle of nowhere with no cell phone reception. You decide to hitchhike. A rusty pickup truck rumbles to a stop next to you. A man with a wide brimmed hat with soulless eyes opens the passenger door for you and asks: "Need a ride, boy?".',
@@ -34,6 +35,38 @@ class StoryBrain {
         storyTitle:
             'You bond with the murderer while crooning verses of "Can you feel the love tonight". He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: "Try the pier".',
         choice1: 'Restart',
+        choice2: '')
+  ];
+  List<Story> _storyDataFrench = [
+    Story(
+        storyTitle:
+            '« Votre voiture a crevé un pneu sur une route sinueuse au milieu de nulle part sans réception de téléphone portable. Vous décidez de faire de l\'auto-stop. Une camionnette rouillée s\'arrête à côté de vous. Un homme avec un chapeau à larges bords et des yeux sans âme vous ouvre la portière du passager et vous demande : " Besoin d`\'un tour, mon garçon ? "',
+        choice1: 'Je vais sauter dedans. Merci pour l\'aide !',
+        choice2: 'Mieux vaut lui demander d\'abord s\'il est un meurtrier.'),
+    Story(
+        storyTitle: 'Il hoche lentement la tête, indifférent à la question.',
+        choice1: 'Au moins, il est honnête. Je vais monter.',
+        choice2: 'Attends, je sais comment changer un pneu.'),
+    Story(
+        storyTitle:
+            'Alors que vous commencez à conduire, l\'étranger commence à parler de sa relation avec sa mère. Il devient de plus en plus en colère de minute en minute. Il vous demande d\'ouvrir la boîte à gants. À l\'intérieur, vous trouverez un couteau ensanglanté, deux doigts coupés et une cassette d\'Elton John. Il atteint la boîte à gants.',
+        choice1: 'J\'adore Elton John ! Donnez-lui la cassette.',
+        choice2:
+            'C\'est lui ou moi ! Vous prenez le couteau et le poignardez.'),
+    Story(
+        storyTitle:
+            'Quelle? Un tel flic dehors! Saviez-vous que les accidents de la route sont la deuxième cause de décès accidentel pour la plupart des groupes d\'âge adultes ?',
+        choice1: 'Recommencer',
+        choice2: ''),
+    Story(
+        storyTitle:
+            'Alors que vous franchissez le garde-corps et foncez vers les rochers déchiquetés en contrebas, vous réfléchissez à la sagesse douteuse de poignarder quelqu\'un alors qu\'il conduit une voiture dans laquelle vous vous trouvez.',
+        choice1: 'Recommencer',
+        choice2: ''),
+    Story(
+        storyTitle:
+            'Vous vous liez avec le meurtrier en chantonnant des vers de "Pouvez-vous ressentir \'amour ce soir". Il vous dépose à la prochaine ville. Avant de partir, il vous demande si vous connaissez de bons endroits pour jeter les corps. Vous répondez : "Essayez la jetée"',
+        choice1: 'Recommencer',
         choice2: '')
   ];
   int _storyNumber = 0;
