@@ -5,8 +5,8 @@ import 'story.dart';
 class StoryBrain {
 //TOD: Step 7 - Uncomment the lines below to include storyData as a private property in StoryBrain. Hint: You might need to change something in story.dart to make this work.
 
-  List<Story> _storyData = [];
-  List<Story> _storyDataEnglish = [
+  List<Story> _storyDataEnglish = [];
+  List<Story> _storyData = [
     Story(
         storyTitle:
             'Your car has blown a tire on a winding road in the middle of nowhere with no cell phone reception. You decide to hitchhike. A rusty pickup truck rumbles to a stop next to you. A man with a wide brimmed hat with soulless eyes opens the passenger door for you and asks: "Need a ride, boy?".',
@@ -37,6 +37,7 @@ class StoryBrain {
         choice1: 'Restart',
         choice2: '')
   ];
+
   List<Story> _storyDataFrench = [
     Story(
         storyTitle:
