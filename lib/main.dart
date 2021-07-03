@@ -3,10 +3,6 @@ import 'story_brain.dart';
 //TOD: Step 15 - ----> OK <----  Run the app and see if you can see the screen update with the first story. Delete this TODO if it looks as you expected.
 
 void main() => runApp(Destiny());
-// void main() {
-//   Story story = Story(storyTitle: "aa", choice1: "bb", choice2: "cc");
-//   story.pouet();
-// }
 
 class Destiny extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -42,6 +38,29 @@ class _StoryPageState extends State<StoryPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
+              // Expanded(
+              //   flex: 1,
+              //   child: TextButton(
+              //     onPressed: () => showDialog<String>(
+              //       context: context,
+              //       builder: (BuildContext context) => AlertDialog(
+              //         title: const Text('AlertDialog Title'),
+              //         content: const Text('AlertDialog description'),
+              //         actions: <Widget>[
+              //           TextButton(
+              //             onPressed: () => storyBrain.chooseLanguage(false),
+              //             child: const Text('Cancel'),
+              //           ),
+              //           TextButton(
+              //             onPressed: () => storyBrain.chooseLanguage(false),
+              //             child: const Text('OK'),
+              //           ),
+              //         ],
+              //       ),
+              //     ),
+              //     child: const Text('Show Dialog'),
+              //   ),
+              // ),
               Expanded(
                 flex: 12,
                 child: Center(
@@ -114,6 +133,17 @@ class _StoryPageState extends State<StoryPage> {
             ],
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            storyBrain.chooseLanguage();
+          });
+        },
+        hoverElevation: 12.0,
+        child: const Icon(Icons.mood),
+        backgroundColor: Colors.transparent,
+        foregroundColor: Colors.white,
       ),
     );
   }
