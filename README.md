@@ -1,3 +1,9 @@
+# contexte : 
+
+J'ai réalisé ce projet dans le cadre la formation de flutter que je suis en ce moment. 
+Ma touche personnelle a été d'ajouter la possibilité de changer la langue utilisée pour les questions et réponses dans ce petit projet. Cela ayant été fait avec un Float Action Button. Je me suis contenté de la traduction de google translate. Il peut être imparfait.
+
+
 ![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
 
